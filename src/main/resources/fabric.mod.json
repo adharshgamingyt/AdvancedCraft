@@ -12,7 +12,7 @@
 		"sources": "https://github.com/adharshgamingyt/AdvancedCraft"
 	},
 	"license": "BSD 3-Clause License",
-	"icon": "assets/advancedcraft/icon.png",
+	"icon": "icon1.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
