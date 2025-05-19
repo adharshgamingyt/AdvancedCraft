@@ -1,0 +1,11 @@
+package com.adharsh.advancedcraft;
+
+import net.fabricmc.api.ClientModInitializer;
+
+public class AdvancedCraftClient implements ClientModInitializer {
+
+    @Override
+    public void onInitializeClient() {
+
+    }
+}
