@@ -1,0 +1,59 @@
+{
+	"schemaVersion": 1,
+	"id": "advancedcraft",
+	"version": "${version}",
+	"name": "AdvancedCraft",
+	"description": "A Mod That Adds Many Advanced Things! \n By Adharsh",
+	"authors": [
+		"Adharsh"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/adharshgamingyt/AdvancedCraft"
+	},
+	"license": "BSD 3-Clause License",
+	"icon": "assets/advancedcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.adharsh.advancedcraft.AdvancedCraft"
+		],
+		"client": [
+			"com.adharsh.advancedcraft.AdvancedCraftClient"
+		],
+		"fabric-datagen": [
+			"com.adharsh.advancedcraft.AdvancedCraftDataGenerator"
+		]
+	},
+	"mixins": [
+		"advancedcraft.mixins.json",
+		{
+			"config": "advancedcraft.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+			},
+			"badges": [ ],
+			"parent": {
+				"id": "advancedcraft",
+				"name": "AdvancedCraft",
+				"description": "A Mod That Adds Many Advanced Things! \n By Adharsh",
+				"icon": "assets/advancedcraft/icon.png",
+				"badges": [  ]
+			},
+			"update_checker": true
+		}
+	}
+}
