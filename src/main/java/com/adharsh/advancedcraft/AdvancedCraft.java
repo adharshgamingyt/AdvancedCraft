@@ -1,7 +1,12 @@
 package com.adharsh.advancedcraft;
 
+import com.adharsh.advancedcraft.registry.ModBlocks;
+import com.adharsh.advancedcraft.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +17,12 @@ public class AdvancedCraft implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+
+	//	An global identifier function
+	public static Identifier id (String path) {
+		return  Identifier.of(MOD_ID, path);
+	}
+
 
 	@Override
 	public void onInitialize() {
@@ -24,6 +35,8 @@ public class AdvancedCraft implements ModInitializer {
 		LOGGER.info("Loading");
 
 		// Registering Mod Items, Blocks, Mobs etc
+		ModItems.RegisterModItems();
+		ModBlocks.RegisterModBlocks();
 
 		// Finished Message
 	}
