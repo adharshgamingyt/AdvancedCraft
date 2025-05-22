@@ -1,10 +1,13 @@
 package com.adharsh.advancedcraft.registry;
 
 import com.adharsh.advancedcraft.AdvancedCraft;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -16,11 +19,10 @@ import java.util.function.Function;
 
 public class ModBlocks {
 
-    public static final Block TITANIUM_BLOCK = RegisterBlock("titanium_block",
-            settings -> new Block(AbstractBlock.Settings.create()
-                    .strength(7.0f, 50.0f)
-                    .requiresTool()
-                    .sounds(BlockSoundGroup.METAL)));
+    public static final Block TITANIUM_BLOCK = RegisterBlock("titanium_block", properties -> new Block(properties
+            .requiresTool()
+            .strength(5.0f, 6.0f)
+            .sounds(BlockSoundGroup.METAL)));
 
     private static Block RegisterBlock(String name, Function<AbstractBlock.Settings, Block> function) {
         Identifier id = AdvancedCraft.id(name);
@@ -45,6 +47,11 @@ public class ModBlocks {
     }
 
     public static void RegisterModBlocks() {
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
+            entries.add(TITANIUM_BLOCK);
+        });
+
         AdvancedCraft.LOGGER.info("Registering Blocks For " + AdvancedCraft.MOD_ID);
     }
 }

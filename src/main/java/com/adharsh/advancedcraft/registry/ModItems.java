@@ -1,9 +1,9 @@
 package com.adharsh.advancedcraft.registry;
 
 import com.adharsh.advancedcraft.AdvancedCraft;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.item.BlockItem;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -16,6 +16,7 @@ public class ModItems {
 
     public static final Item RAW_TITANIUM = RegisterItem("raw_titanium", Item::new);
     public static final Item TITANIUM_INGOT = RegisterItem("titanium_ingot", Item::new);
+    public static final Item TITANIUM_NUGGET = RegisterItem("titanium_nugget", Item::new);
 
     private static  Item RegisterItem(String name, Function<Item.Settings, Item> function) {
         Identifier id = AdvancedCraft.id(name);
@@ -27,6 +28,13 @@ public class ModItems {
 
     public static void RegisterModItems () {
         AdvancedCraft.LOGGER.info("Registering Items For " + AdvancedCraft.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(RAW_TITANIUM);
+            entries.add(TITANIUM_INGOT);
+            entries.add(TITANIUM_NUGGET);
+        });
+
     }
 
 }

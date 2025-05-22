@@ -32,12 +32,13 @@ public class AdvancedCraft implements ModInitializer {
 
 		// Loading Message
 		LOGGER.info("Hello From AdvancedCraft!");
-		LOGGER.info("Loading");
+		LOGGER.info("Loading...");
 
 		// Registering Mod Items, Blocks, Mobs etc
 		ModItems.RegisterModItems();
 		ModBlocks.RegisterModBlocks();
 
 		// Finished Message
+		AdvancedCraft.LOGGER.info("AdvancedCraft is loaded!");
 	}
 }
