@@ -1,5 +1,3 @@
-# AdvancedCraft
-
 <div align="center">
 
 <img src="https://github.com/adharshgamingyt/AdvancedCraft/blob/master/.github/assets/big_logo.png" alt="AdvancedCraft Logo" style="width: 1220px; height: auto;">
