@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="https://github.com/adharshgamingyt/AdvancedCraft/blob/master/.github/assets/big_logo.png" alt="AdvancedCraft Logo" style="width: 120px; height: auto;">
+<img src="https://github.com/adharshgamingyt/AdvancedCraft/blob/master/.github/assets/big_logo.png" alt="AdvancedCraft Logo" style="width: 520px; height: auto;">
 
 **A comprehensive Minecraft mod that enhances gameplay with new items, blocks, tools, and mechanics**
 
