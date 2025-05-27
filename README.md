@@ -1,8 +1,6 @@
-# AdvancedCraft
-
 <div align="center">
 
-<img src="https://github.com/adharshgamingyt/AdvancedCraft/blob/master/src/main/resources/assets/advancedcraft/icon.png" alt="AdvancedCraft Logo" style="width: 120px; height: auto;">
+<img src="https://github.com/adharshgamingyt/AdvancedCraft/blob/master/.github/assets/big_logo.png" alt="AdvancedCraft Logo" style="width: 1220px; height: auto;">
 
 **A comprehensive Minecraft mod that enhances gameplay with new items, blocks, tools, and mechanics**
 
@@ -113,4 +111,6 @@ This project is licensed under the [BSD 3-Clause License](LICENSE).
 
 ### Made with ❤️ for the Minecraft community
 
-[GitHub](https://github.com/adharshgamingyt) | [Twitter](https://twitter.com/adharsh2010)
+[Discord](https://discord.gg/RNUZkychRP) | [GitHub](https://github.com/adharshgamingyt) | [Twitter](https://twitter.com/adharsh2010) 
+
+**NOTE THAT THE DISCORD SERVER IS FOR EVERYTHING I DO LIKE MAKING GAMING VIDEOS, CODING, OTHER STUFF'S ETC SO REPORT WITH FULL DETAILS ABOUT THE MOD LIKE NAME VERSION GAME VERSION ETC**
