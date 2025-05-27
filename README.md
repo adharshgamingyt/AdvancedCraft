@@ -111,4 +111,6 @@ This project is licensed under the [BSD 3-Clause License](LICENSE).
 
 ### Made with ❤️ for the Minecraft community
 
-[GitHub](https://github.com/adharshgamingyt) | [Twitter](https://twitter.com/adharsh2010)
+[Discord](https://discord.gg/RNUZkychRP) | [GitHub](https://github.com/adharshgamingyt) | [Twitter](https://twitter.com/adharsh2010) 
+
+**NOTE THAT THE DISCORD SERVER IS FOR EVERYTHING I DO LIKE MAKING GAMING VIDEOS, CODING, OTHER STUFF'S ETC SO REPORT WITH FULL DETAILS ABOUT THE MOD LIKE NAME VERSION GAME VERSION ETC**
