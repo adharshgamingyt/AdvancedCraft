@@ -8,7 +8,7 @@
 		"Adharsh"
 	],
 	"contact": {
-		"homepage": "",
+		"homepage": "https://modrinth.com/project/advanced-craft",
 		"sources": "https://github.com/adharshgamingyt/AdvancedCraft"
 	},
 	"license": "BSD 3-Clause License",
@@ -44,6 +44,7 @@
 	"custom": {
 		"modmenu": {
 			"links": {
+				"modmenu.discord": "https://discord.gg/RNUZkychRP"
 			},
 			"badges": [ ],
 			"parent": {
