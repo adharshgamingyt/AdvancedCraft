@@ -1,12 +1,10 @@
 package com.adharsh.advancedcraft.registry;
 
 import com.adharsh.advancedcraft.AdvancedCraft;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -19,6 +17,23 @@ import java.util.function.Function;
 public class ModBlocks {
 
     public static final Block TITANIUM_BLOCK = RegisterBlock("titanium_block", properties -> new Block(properties
+            .requiresTool()
+            .strength(5.0f, 7.0f)
+            .sounds(BlockSoundGroup.METAL)));
+
+    public static final Block TITANIUM_ORE = RegisterBlock("titanium_ore", properties -> new Block(properties
+            .requiresTool()
+            .strength(4.0f, 5.0f)
+            .sounds(BlockSoundGroup.STONE)
+    ));
+
+    public static final Block DEEPSLATE_TITANIUM_ORE = RegisterBlock("deepslate_titanium_ore", properties -> new Block(properties
+            .requiresTool()
+            .strength(4.0f, 5.0f)
+            .sounds(BlockSoundGroup.STONE)
+    ));
+
+    public static final Block RAW_TITANIUM_BLOCK = RegisterBlock("raw_titanium_block", properties -> new Block(properties
             .requiresTool()
             .strength(5.0f, 6.0f)
             .sounds(BlockSoundGroup.METAL)));
@@ -46,11 +61,6 @@ public class ModBlocks {
     }
 
     public static void RegisterModBlocks() {
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
-            entries.add(TITANIUM_BLOCK);
-        });
-
         AdvancedCraft.LOGGER.info("Registering Blocks For " + AdvancedCraft.MOD_ID);
     }
 }

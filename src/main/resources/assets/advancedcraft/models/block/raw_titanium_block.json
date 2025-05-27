@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "advancedcraft:block/raw_titanium_block"
+  }
+}

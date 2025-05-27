@@ -1,9 +1,9 @@
 package com.adharsh.advancedcraft;
 
 import com.adharsh.advancedcraft.registry.ModBlocks;
+import com.adharsh.advancedcraft.registry.ModItemGroups;
 import com.adharsh.advancedcraft.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
-
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -35,6 +35,7 @@ public class AdvancedCraft implements ModInitializer {
 		// Registering Mod Items, Blocks, Mobs etc
 		ModItems.RegisterModItems();
 		ModBlocks.RegisterModBlocks();
+		ModItemGroups.RegisterModItemGroups();
 
 		// Finished Message
 		AdvancedCraft.LOGGER.info("AdvancedCraft is loaded!");

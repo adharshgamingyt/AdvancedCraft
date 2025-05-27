@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "advancedcraft:titanium_ore",
+    "advancedcraft:raw_titanium_block",
+    "advancedcraft:titanium_block",
+    "advancedcraft:deepslate_titanium_ore"
+  ]
+}

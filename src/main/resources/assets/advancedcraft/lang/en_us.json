@@ -2,6 +2,9 @@
   "item.advancedcraft.raw_titanium": "Raw Titanium",
   "item.advancedcraft.titanium_ingot": "Titanium Ingot",
   "item.advancedcraft.titanium_nugget": "Titanium Nugget",
-
-  "block.advancedcraft.titanium_block": "Titanium Block"
+  "block.advancedcraft.titanium_block": "Titanium Block",
+  "block.advancedcraft.titanium_ore": "Titanium Ore",
+  "block.advancedcraft.deepslate_titanium_ore": "Deepslate Titanium Ore",
+  "block.advancedcraft.raw_titanium_block": "Raw Titanium Block",
+  "itemGroup.advancedcraft.itemgroup": "AdvancedCraft"
 }
