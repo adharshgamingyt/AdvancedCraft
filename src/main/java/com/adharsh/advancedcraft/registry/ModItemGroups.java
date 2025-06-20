@@ -15,14 +15,14 @@ public class ModItemGroups {
             FabricItemGroup.builder()
                     .icon(() -> new ItemStack(ModItems.TITANIUM_INGOT))
                     .displayName(Text.translatable("itemGroup.advancedcraft.itemgroup"))
-                    .entries((displayContext, itemgroup) -> {
-                        itemgroup.add(ModItems.RAW_TITANIUM);
-                        itemgroup.add(ModItems.TITANIUM_INGOT);
-                        itemgroup.add(ModItems.TITANIUM_NUGGET);
-                        itemgroup.add(ModBlocks.RAW_TITANIUM_BLOCK);
-                        itemgroup.add(ModBlocks.TITANIUM_ORE);
-                        itemgroup.add(ModBlocks.DEEPSLATE_TITANIUM_ORE);
-                        itemgroup.add(ModBlocks.TITANIUM_BLOCK);
+                    .entries((displayContext, entries) -> {
+                        entries.add(ModItems.RAW_TITANIUM);
+                        entries.add(ModItems.TITANIUM_INGOT);
+                        entries.add(ModItems.TITANIUM_NUGGET);
+                        entries.add(ModBlocks.RAW_TITANIUM_BLOCK);
+                        entries.add(ModBlocks.TITANIUM_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_TITANIUM_ORE);
+                        entries.add(ModBlocks.TITANIUM_BLOCK);
                     })
                     .build()
     );
